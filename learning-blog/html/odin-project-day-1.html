@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odin Project Progress</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>  
+        <ul class="container">  
+            <li><a href="index.html">Home</a></li>
+            <li><a href="contact.html">Contact</a></li>  
+            <li><a href="learn-blog.html">Learn Blog</a></li>  
+            <li><a href="reviews.html">Book Reviews</a></li>
+            <li><a href="game-dev.html">Game Dev</a></li>
+        </ul>  
+    </nav>
+    <div class="content">
+        <div class="main-container">
+            <h1 style="text-align: center;">Day 1 of the Course - 2nd October 2024</h1>
+            <h4 style="text-align: center;"><a href="#lesson1">Lesson 1</a> <a href="#lesson2">Lesson 2</a>     
+            <a href="#lesson3">Lesson 3</a></h4>
+            <h5 style="text-align: center;"><a href="odin-project-day-2.html">Next Day</a></h5>
+            <br><br>
+            <hr class="rounded">
+            <div class="lesson1">
+                <br><br>
+                <h2>Lesson 1 - What is HTML, CSS and JavaScript?</h2>
+                <h3>What are the main three languages used?</h3>
+                <p><b>1: What is HTML?</b> It is a language that determines how documents 
+                    and web pages are displayed in a web browser, the language for 
+                    the building blocks of any website.
+                </p>
+                <p><b>2: What is CSS?</b> CSS, or 'Cascading Style Sheets', is a popular
+                    style sheet language that determines how a document in HTML is styled, such
+                    as it's colours, fonts, layout and responsive features.
+                </p>
+                <p><b>3: What is JavaScript?</b> JavaScript allows you to change CSS and HTML 
+                    elements on your website after the site has been loaded, giving you the ability
+                    to make your site more interactive and engaging for users with animations, embedded
+                    video media and more.</p>
+                <p><b>These three programming languages typically lay the foundations of any website,
+                    which is why it is important that you are aware of how these languages function, 
+                    how they may affect your website and what they are typically used for.
+                </b></p>
+                <br>
+                <h2>TL:DR</h2>
+                <p><b>HTML</b> Creates the structure</p>
+                <p><b>CSS</b> Stylizes the website</p>
+                <p><b>JavaScript</b> Increases interactivity</p>
+                <br>
+                <h3>Additional Languages</h3>
+                <p>Websites may use a wide range of different programming languages, with some being more
+                    complex than others.
+                </p>
+                <p>Some of the more common web dev languages consist of HTML, CSS, JS, PHP, Python, Ruby and SQL,
+                    however, the primary languages (HTML, CSS and JS) should be enough to understand the basics.
+                </p>
+            </div>
+            <br><br>
+            <hr class="rounded">
+            <div id="lesson2">
+                <br><br>
+                <h2>Lesson 2 - Elements and Tags</h2>
+                <p>HTML defines the structure and content of webpages. HTML elements are what creates all of the
+                    paragraphs, headings, lists, images and links that make up a typical website.
+                </p>
+                <h3>Elements and Tags</h3>
+                <p>Almost all elements on a HTML page are just pieces of content wrapped in opening and closing tags.</p>
+                <p>Opening tags tell the browser this is the start of a HTML element, and closing tags tell the browser
+                    where the element ends. They both consist of angle bracks with a word in them. &lt;p&gt;
+                </p>
+                <br>
+                <p>
+                    HTML has a vast <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">list</a> of
+                    predefined tags, and it is important to use the correct tags for content for two reasons.</p>
+                <p>
+                    <b>Reason 1: </b>It has a direct impact on how the website is ranked in search engines.<br>
+                    <b>Reason 2: </b>It increases accessibility for users who rely on assitive technologies such as screen readers. <br>
+                    Using the correct elements for content is called semantic HTML.
+                </p><br>
+                <h3>Void Elements</h3>
+                <p>Some HTML elements don't have a closing tag, instead just having a single tag such as &lt;br&gt;. 
+                    These are known as void elements becauase they are void of any content, due to them having no closing tag.
+                </p>
+                <p>Watching <a href="https://www.youtube.com/watch?v=LGQuIIv2RVA">this</a> video.</p>
+                <p>Tags essentially tell the computer where the content starts and where the content stops.</p>
+            </div>
+            <br><br>
+            <hr class="rounded">
+            <div id="lesson3">
+                <br><br>
+                <h2>Lesson 3 - HTML Boilerplate</h2>
+                <p>All HTML documents have the same basic structure or boilerplate, that needs to be in place before anything useful can be done.</p>
+                <h3>The DOCTYPE</h3>
+                <p>Every HTML page starts with a ductype declaration. The doctype's purpose is to tell the browser what version of HTML it should
+                    use to render the document. The latest version of HTML is HTML5, and the doctype for that version is !DOCTYPE html.
+                </p>
+                <p>
+                    After the doctype is declared, you need to provide a &lt;html&gt; element.
+                    This is what's known as the root element of the ducment, meaning that every other element in the document will be a descendant of it.
+                </p>
+                <p>
+                    This becomes more important later on when we learn about manipulating HTML with JavaScript, but for now, just know that the &lt;html&gt;
+                    element should be included on every HTML document.
+                </p>
+                <p>The lang attribute specifies the language of the text content in that element. This attribute is primarily used for improving accessibility
+                    of the webpage, allowing for assistive technologies to adapt according to the language.
+                </p>
+                <h3>Head Element</h3>
+                <p>
+                    The &lt;head&gt; element is where we put important meta-information <b>about</b> our webpages, and stuff required for our webpages to render
+                    correctly in the browser. Inside the head element, we <b>should not</b> use any element that displays content.
+                </p>
+                <h4>Meta Element</h4>
+                <p>
+                    A meta tag should always be included in the head element, as it ensure that the webpage will display special symbols and characters from
+                    different languages correctly in the browser.
+                </p>
+                <h4>Title Element</h4>
+                <p>The title element is used to change the text in the webpage's browser tab.</p>
+                <h3>Body Element</h3>
+                <p>
+                    The final element needed to complete the HTML boilerplate is the body element. This is where all the content that will be displayed to users
+                    will go; the text, images, lists etc.
+                </p>
+            </div>
+            <br><br>
+            <hr class="rounded">
+        </div>
+    </div>
+    <footer>
+        <p>Author: Hege Refsnes</p>
+        <p><a href="mailto:hege@example.com">hege@example.com</a></p>
+      </footer>
+</body>
+</html>
