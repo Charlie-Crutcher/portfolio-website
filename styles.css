@@ -12,16 +12,16 @@ nav {
   border: 0px;
   overflow: hidden;
 }
-.container {  
+.nav-container {  
     margin: 1%;
     display: flex;  
     position: sticky;
     top: 0;
     overflow: hidden;
-    background-color: #8AB0AB;
+    background-color: #3E505B;
   }
 
-  .container > li {  
+  .nav-container > li {  
     flex: 1;  
     color: #3E505B;
   }
@@ -33,6 +33,7 @@ nav {
   .content {
     margin: 5%;
     border: 5%;
+    background-color: #8AB0AB;
   }
 
   ul {
