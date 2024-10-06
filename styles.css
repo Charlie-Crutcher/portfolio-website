@@ -1,11 +1,11 @@
 body {
     margin: 0px;
     border: 0px;
-    background-color: rgb(146, 170, 152);
+    background-color: #26413C;
     font-family: "Fredoka", sans-serif;
 }
 nav {
-  background-color: rgb(146, 170, 152);
+  background-color: #26413C;
   position: sticky;
   top: 0;
   margin: 0px;
@@ -55,6 +55,6 @@ nav {
     padding: 1%;
     bottom:0;
     width:100%; 
-    background-color: #393838; 
+    background-color: #03120E; 
     opacity: 1;
 }
