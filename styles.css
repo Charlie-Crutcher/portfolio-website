@@ -1,38 +1,39 @@
 body {
     margin: 0px;
     border: 0px;
-    background-color: rgb(146, 170, 152);
+    background-color: #3E505B;
     font-family: "Fredoka", sans-serif;
 }
 nav {
-  background-color: rgb(146, 170, 152);
+  background-color: #3E505B;
   position: sticky;
   top: 0;
   margin: 0px;
   border: 0px;
   overflow: hidden;
 }
-.container {  
+.nav-container {  
     margin: 1%;
     display: flex;  
     position: sticky;
     top: 0;
     overflow: hidden;
-    background-color: rgb(146, 170, 152);
+    background-color: #3E505B;
   }
 
-  .container > li {  
+  .nav-container > li {  
     flex: 1;  
-    color: #626F47;
+    color: #3E505B;
   }
 
   .info-container-day-2 {
-    background-color: #626F47;
+    background-color: #3E505B;
     border-radius: 25px;
   }
   .content {
     margin: 5%;
     border: 5%;
+    background-color: #8AB0AB;
   }
 
   ul {
@@ -55,6 +56,6 @@ nav {
     padding: 1%;
     bottom:0;
     width:100%; 
-    background-color: #393838; 
+    background-color: #03120E; 
     opacity: 1;
 }
