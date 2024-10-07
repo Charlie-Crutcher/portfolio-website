@@ -1,27 +1,45 @@
+/* Main body of the website */
 body {
     margin: 0px;
     border: 0px;
     background-color: rgb(146, 170, 152);
     font-family: "Fredoka", sans-serif;
 }
+
+/* Generic anchor tags */
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  color:#393838;
+}
+
+a:active {
+  color: #b8b8b8;
+}
+
 nav {
-  background-color: rgb(146, 170, 152);
-  position: sticky;
+  background-color: #393838;
+  position: relative;
   top: 0;
   margin: 0px;
   border: 0px;
   overflow: hidden;
 }
-.container {  
-    margin: 1%;
+
+/* List class for nav container, the nav bar found at the top of every page on the site. */
+.nav-container {  
     display: flex;  
-    position: sticky;
+    position: relative;
     top: 0;
+    padding-left: 0;
     overflow: hidden;
-    background-color: rgb(146, 170, 152);
+    background-color: #393838;
   }
 
-  .container > li {  
+  .nav-container > li {  
     flex: 1;  
     color: #626F47;
   }
@@ -41,7 +59,7 @@ nav {
   }
 
   ul a:hover {
-    color: rgb(50, 50, 50)
+    color: lightgray;
   }
 
   ul a {
@@ -57,4 +75,18 @@ nav {
     width:100%; 
     background-color: #393838; 
     opacity: 1;
+}
+
+/* Lesson navigation class. Found at the bottom of each lesson in learning blog. */
+.lesson-nav {
+  text-align: center;
+  list-style: none;
+  margin: 1%;
+  display: flex;  
+  overflow: hidden;
+}
+
+.lesson-nav > li {  
+  flex: 1;  
+  color: #626F47;
 }

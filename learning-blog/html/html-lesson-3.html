@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charlie Crutcher | HTML Lesson 3</title>
+    <link rel="stylesheet" href="../../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+
+    <!-- Websites Nav Bar Element -->
+    <nav>  
+        <ul class="nav-container">  
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../../contact/contact-home.html">Contact</a></li>  
+            <li><a href="../../learning-blog/learning-blog-home.html">Learning Blog</a></li>  
+            <li><a href="../../book-reviews/book-reviews-home.html">Reading List</a></li>
+            <li><a href="../../game-dev/game-dev-home.html">Game Dev</a></li>
+        </ul> 
+    </nav>
+    <!-- End of Websites Nav Bar Element -->
+
+
+    <!-- Main Div for Website's Content -->
+    <div class="content">
+
+        <!-- Lesson Content Element -->
+        <div class="lesson">
+            <hr class="rounded" color="black">
+            <h1 style="text-align: center;">Lesson 3 - HTML Boilerplate</h1>
+            <h2 style="text-align: center;">Date: 2nd October 2024</h2>
+            <hr class="rounded" color="black"><br>
+
+            <h3>Introduction</h3>
+            <p>
+                All HTML documents have the same basic structure or boilerplate, that needs to be
+                in place before anything useful can be done.
+            </p><br>
+
+            <h3>The DOCTYPE</h3>
+            <p>
+                Every HTML page starts with a <b>!DOCTYPE</b> declaration. The DOCTYPE's purpose
+                is to tell the browser what version of HTML it should use to render the document.
+                The latest version of HTML is HTML5, and the doctype for that version is !DOCTYPE html.
+            </p>
+            <p>
+                After the doctype is declared, you need to provide a <b>&lt;html&gt;</b> element.
+                This is what's known as the root element of the document, meaning that every other
+                element in the document will be a descendant of it.
+            </p>
+            <p>
+                This becomes more important later on when we learn about manipulating HTML with
+                JavaScript, but for now, just know that the <b>&lt;html&gt; element should be included
+                on every HTML document.</b>
+            </p>
+            <p>
+                The <b>lang</b> attribute specifies the language of the text content in that element.
+                This attribute is primarily used for improving accessibility of the webpage, allowing
+                for assistive technologies to adapt according to the language.
+            </p><br>
+
+            <h3>Head Element</h3>
+            <p>
+                The <b>&lt;head&gt;</b> element is where we put important meta-information about our
+                webpages, and things required for our webpages to render correctly in the browser. 
+                Inside the head element, we <b>should not</b> use any element that displays content.
+            </p>
+            <h4>Meta Element</h4>
+            <p>
+                A meta tag should always be included in the head element, as it ensure that the webpage will display special symbols and characters from
+                different languages correctly in the browser.
+            </p>
+            <h4>Title Element</h4>
+            <p>The title element is used to change the text in the webpage's browser tab.</p><br>
+
+            <h3>Body Element</h3>
+            <p>
+                The final element needed to complete the HTML boilerplate is the body element.
+                <b>This is where all the content that will be displayed to users will go;</b>
+                the text,images, lists etc.
+            </p><br>
+
+            <hr class="rounded" color="black">
+            <ul class="lesson-nav">
+                <li><a href="./html-lesson-2.html">Previous Lesson</a></li>
+                <li><a href="./html-lessons.html">Back</a></li>
+                <li><a href="./html-lesson-4.html">Next Lesson</a></li>
+            </ul>
+            <hr class="rounded" color="black">
+        </div>
+        <!-- End of Lesson Content Element -->
+
+    </div>
+    <!-- End of Main Div -->
+
+    <!-- Footer element -->
+    <footer>
+        <p style="text-align: center;">Charlie Crutcher</p>
+        <p style="text-align: center;"><a href="mailto:charliemarkcrutcher@gmail.com">charliemarkcrutcher@gmail.com</a></p>
+    </footer>
+    <!-- End of footer element -->
+     
+</body>
+</html>
