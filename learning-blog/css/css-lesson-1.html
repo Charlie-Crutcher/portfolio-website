@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML | Lesson 1</title>
+    <link rel="stylesheet" href="../../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+
+    <!-- Websites Nav Bar Element -->
+    <nav>  
+        <ul class="container">  
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../../contact/contact-home.html">Contact</a></li>  
+            <li><a href="../learning-blog-home.html">Learn Blog</a></li>  
+            <li><a href="../../book-reviews/book-reviews-home.html">Book Reviews</a></li>
+            <li><a href="../../game-dev/game-dev-home.html">Game Dev</a></li>
+        </ul> 
+        <!-- Previous/Next Lesson Navigation Bar -->
+        <ul class="container">
+            <li><a href="html-lesson-2.html">Next Lesson</a></li>
+        </ul> 
+    </nav>
+    <!-- End of Websites Nav Bar Element -->
+
+
+    <!-- Main Div for Website's Content -->
+    <div class="content">
+
+        <!-- Lesson Content Element -->
+        <div class="lesson">
+            <h2>CSS: Lesson 1</h2>
+            <h3>Introduction to CSS</h3>
+            <h3>Date: 7th October 2024</h3>
+            <p>
+                Now we have established how to write the HTML that structures our webpages, we can 
+                now start to add some <em>style</em> to our pages, which is what CSS is for.
+            </p>
+            <br>
+
+            <h4>Basic syntax</h4>
+            <p>
+                At the most basic level, CSS is made up of various rules. These rules are made up 
+                of a selector and a semicolon-separated list of declarations, with each of those
+                declarations being made up of a property-value pair.
+            </p>
+            <img href="../../images/css/basic-syntax.jpg">
+            <br>
+
+            <h4>Selectors</h4>
+            <p>
+                Selectors refer to the HTML elements to which the CSS rules apply to; they are what
+                are being 'selected' for each CSS rule. Below, we will go through the most common 
+                subsections used in CSS.
+            </p>
+            <h5>Universal selector</h5>
+            <p>
+                The universal selector selects elements of any time. It consists of a simple asterisk (*).
+            </p>
+            <h5>Type selectors</h5>
+            <p>
+                The type selector (or element selector), selects all elements of the given element 
+                type, with the syntax just being the name of the element. For example: we could use
+                div {color: white;}, which would select all div elements.
+            </p>
+            <h5>Class selectors</h5>
+            <p>
+                Class selectors select all elements with the given class, which is just an
+                attribute placed on a HTML element. For example div class="alert" in HTML, would be
+                .alert {color: red;} in CSS, only changing this class.
+            </p>
+            <p>
+                Class selector syntax within CSS start with a period, followed by the case-sensitive
+                value of the class attribute. Classes aren't required to be specific to a particular
+                element, so you can use the same class on as many elements as you would like.
+            </p>
+            <h5>ID selectors</h5>
+            <p>
+                ID selectors are similar to class selectors. They select an element with the given 
+                ID, which again is an attribute placed on a HTML element. The difference between 
+                classes and IDs is that an element can only have <b>one</b> ID. It cannot be repeated
+                on a single page and should not contain any whitespace.
+            </p>
+            <p>
+                ID selector syntax start with a hashtag, followed by the case-sensitive value of
+                the ID attribute. You should use IDs <b>sparingly</b>, as in most instances, simply 
+                using classes will suffice.
+            </p>
+            <h5>The grouping selector</h5>
+            <p>
+                What if we had two groups of elements that share some of their style declarations?
+            </p>
+            <p>
+                We can cut down on repetition by grouping two selectors together, as a comma-separated
+                list. For example:
+            </p>
+            <img href="../../images/css/group-selectors.jpeg">
+            <h5>Chaining selectors</h5>
+            <p>
+                Another way to use selectors is to chain them as a list without any separation.
+            </p>
+            <p>
+                div class='subsection header'<br>
+                p class='subsection preview'
+            </p>
+            <p>
+                Here we have two elements with the <em>subsection</em> class, that have some sort 
+                of unique styles. What if we only wanted to apply a separate rule to the element 
+                that also has <em>header</em> as a second class? We could chain both the class
+                selectors together in CSS.
+            </p>
+            <p>.subsection.header {color: red;}</p>
+            <p>
+                What <em>.subsection.header</em> does is selects any element that has both the 
+                <em>subsection</em> and <em>header</em> classes. This can also be used to chain a 
+                class and an ID, (.subsection#preview) like so.
+            </p>
+            <h5>Descendant combinator</h5>
+            <p>
+                Combinators allow us to combine multiple selectors differently than either grouping
+                or chaining them, as they show a relationship between the selectors. There are four
+                types of combinators in total, but for now we're only going to discuss the <b>Descendant 
+                    combinator</b>, which is represented in CSS by a single space between selectors. A 
+                    descendant combinator will only cause elements that match the last selector to be selected
+                    if they also have an ancestor that matches the previous selector.
+            </p>
+
+        </div>
+        <!-- End of Lesson Content Element -->
+
+    </div>
+    <!-- End of Main Div -->
+</body>
+</html>
