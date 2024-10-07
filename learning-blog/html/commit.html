@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML | Lesson 1</title>
+    <link rel="stylesheet" href="../../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+
+    <!-- Websites Nav Bar Element -->
+    <nav>  
+        <ul class="container">  
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../../contact/contact-home.html">Contact</a></li>  
+            <li><a href="../learning-blog-home.html">Learn Blog</a></li>  
+            <li><a href="../../book-reviews/book-reviews-home.html">Book Reviews</a></li>
+            <li><a href="../../game-dev/game-dev-home.html">Game Dev</a></li>
+        </ul> 
+        <!-- Previous/Next Lesson Navigation Bar -->
+        <ul class="container">
+            <li><a href="html-lesson-2.html">Next Lesson</a></li>
+        </ul> 
+    </nav>
+    <!-- End of Websites Nav Bar Element -->
+
+
+    <!-- Main Div for Website's Content -->
+    <div class="content">
+
+        <!-- Lesson Content Element -->
+        <div class="lesson">
+            <h2>Commit Messages.</h2>
+            <p>
+                It is important to keep a history of good commit messages. This lesson will cover
+                how to write them, when to commit and why they are important.
+            </p>
+            <br>
+            <h4>Why are commit messages important?</h4>
+            <p>
+                When applying for jobs, employers will look through your GitHub projects and therefor,
+                your commit history. Having a good commit practice as a novice developer will help you
+                stand out.
+            </p>
+            <p>
+                Having a good commit history will also allow you and other developers to see what
+                changes were made and why, quickly and efficiently. This is especially useful if a bug
+                is found in the code that needs to be fixed.
+            </p>
+            <p>
+                A good commit message history will also help if you are coming back to a project
+                on which you haven't worked on for a while. It will help you remember the thought
+                process behind the code, aswell as any changes made.
+            </p>
+            <br>
+            <h4>Bad vs. Good Commits.</h4>
+            <p>
+                It is important to know how to write commits effectively. Simply writing: 'fix a bug'
+                is an example of a bad commit, as it is far too vague. A good commit message explains
+                <b>why</b> the changes have been made. It should describe <b>what</b> problem your
+                changes solve and <b>how</b> it solves them.
+            </p>
+            <p>Effective commits contain two parts: the subject and the body.</p>
+            <br>
+            <h5>Subject</h5>
+            <p>A brief summary of the change you made to the project</p>
+            <p><b>Example:</b> 'This is the change I made to the codebase'.</p>
+            <br>
+            <p>
+                <b>Note:</b> GitHub has a 72-character limit for commits, so it is recommended to keep
+                commit subjects within this amount.
+            </p>
+            <br>
+            <h5>Body</h5>
+            <p>A concice, yet clear description of the changes made.</p>
+            <p><b>Example:</b> Describe the problem your commit solves and how.</p>
+            <br>
+            <p><b>Example of a good commit</b></p>
+            <p>Instead of writing simply 'fix a bug'. We can write this instead:</p>
+            <br>
+            <p>(Subject)Add missing link and alt text to the company's logo</p>
+            <p>(Body)Screen readers won't read the images to users with disabilities without this information.</p>
+            <br>
+            <h5>Why this is effective.</h5>
+            <p>
+                It provides a subject that specifies your code's action ('Add missing link and alt
+                 text to the companies logo)
+            </p>
+            <p>
+                It contains a body that provides a clear, but concise description of why the commit
+                 needed to be made ('Screen readers won't read the images to users with disabilities
+                 without this information')
+            </p>
+            <p>
+                Separates the subject from the body with a new/blank line. This is a best practice
+                that is highly recommended to follow, as it makes commit messages easier to read.
+            </p>
+            <br>
+            <h4>How to commit with a subject and body in the message.</h4>
+            <p>
+                Up until now, it is most likely that we have been using 'git commit -m "message"'.
+                To make a commit with a subject and body in message, you can simply write 'git commit'
+                without the -m flag and message argument.
+            </p>
+            <p>
+                Doing this will open a new Visual Studio Code tab. Which will allow you to enter 
+                multi-lined messages. When saved and closed, the commit will be created.
+            </p>
+            <br>
+            <h4>When to commit.</h4>
+            <p>
+                A commit can be thought of like a 'snapshot' of your code at the moment it was made.
+                That version of your code up to that point will be saved, allowing you to revert
+                back to or look back at.
+            </p>
+            <p>
+                The best practice considered for commits is to commit every time you make a meaningful
+                change in the code. This creates a timeline of your progress, showing that your
+                finished code didn't simply appear out of thin air (or made with AI).
+            </p>
+            <p>
+                Make a commit when you get a piece of code you are working on to function as you
+                intended it to, when you fix a typo, or when you fix a bug. As you gain experience,
+                you will eventually develop a better feel for what should be commited and when.
+            </p>
+        </div>
+        <!-- End of Lesson Content Element -->
+
+    </div>
+    <!-- End of Main Div -->
+</body>
+</html>
