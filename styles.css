@@ -80,6 +80,7 @@ nav {
 /* Lesson navigation class. Found at the bottom of each lesson in learning blog. */
 .lesson-nav {
   text-align: center;
+  padding-left: 0;
   list-style: none;
   margin: 1%;
   display: flex;  

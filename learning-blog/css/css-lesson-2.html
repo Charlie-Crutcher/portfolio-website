@@ -14,7 +14,7 @@
 
     <!-- Websites Nav Bar Element -->
     <nav>  
-        <ul class="container">  
+        <ul class="nav-container">  
             <li><a href="../../index.html">Home</a></li>
             <li><a href="../../contact/contact-home.html">Contact</a></li>  
             <li><a href="../learning-blog-home.html">Learn Blog</a></li>  
@@ -30,25 +30,80 @@
 
         <!-- Lesson Content Element -->
         <div class="lesson">
+
+            <!-- Heading -->
             <hr class="rounded" color="black">
             <h1 style="text-align: center;">Lesson 2 - The Cascade</h1>
             <h2 style="text-align: center;">Date: 8th October 2024</h2>
             <hr class="rounded" color="black"><br>
+
+            <!-- Introduction Paragraph -->
             <h3>Introduction</h3>
             <p>
-                Now we have established how to write the HTML that structures our webpages, we can 
-                now start to add some <em>style</em> to our pages, which is what CSS is for.
+                The previous lesson covered basic CSS syntax and selectors. In this lesson, we will
+                combine our knowledge of selectors with the C of CSS - the cascade.
+            </p><br>
+
+            <!-- The Cascade -->
+            <h3>The cascade of CSS</h3>
+            <p>
+                Sometimes we may have conflicting rules, which may lead to some unexpected results.
+                It's important to understand that CSS doesn't do this just to annoy us, it will only
+                do what <em>we</em> tell it to do. One exception to this rule is the default styles
+                provided by a browser.
             </p>
-            <br>
+            <p>
+                If you end up with unexpected behavior, it's either because of default styles, a 
+                misunderstanding of how a property works, or not understanding <em>the cascade</em>.
+            </p>
+            <p>
+                the cascade is what determines which rules actually get applied to our HTML pages.
+                There are different factors that the cascade will use to determine this. We will
+                examine three of these factors, which hopefully will help avoid frustration when
+                using CSS.
+            </p><br>
 
-            <!-- Basic CSS syntax -->
-            <h3>Basic syntax</h3>
+            <h4>Specificity</h4>
+            <p>
+                A specific declaration in CSS will always take precedence over a less specific one.
+                For examples, inline styles have the highest specificity compared to selectors,
+                while each type of selector has its own specificity level that contributes to how
+                specific a declaration is.
+            </p>
+            <o>
+                <li>ID Selectors - Most specific</li>
+                <li>Class Selectors</li>
+                <li>Type Selectors</li>
+            </o>
+            <p>
+                Specificity will only be taken into account when an element has multiple declarations.
+                An ID selector will always beat any number of class selector, while a class selector
+                will always beat any number of type selectors, and so on. when there is no declaration 
+                with a selector of higher specificity, a rule with a greater number of selectors of the 
+                same type will take precedence.
+            </p><br>
 
+            <h4>Inheritance</h4>
+            <p>
+                Inheritance refers to certain CSS properties that, when applied to an element,
+                are inherited by that element's descendants, even if a rule isn't explicitly written
+                for those descendants. Typography-based properties such as <em>color</em>,
+                <em>font-size</em> or <em>font-family</em> are usually inherited, but most other
+                properties are not.
+            </p><br>
             
+            <h4>Rule order</h4>
+            <p>
+                After every other factor has been taken into account, but there are still multiple 
+                conflicting rules targeting an element, the rule that was <em>last</em> defined 
+                takes precedence.
+            </p><br>
+
             <hr class="rounded" color="black">
             <ul class="lesson-nav">
+                <li><a href="./css-lesson-1.html">Previous Lesson</a></li>
                 <li><a href="./css-lessons.html">Back</a></li>
-                <li><a href="./css-lesson-2.html">Next Lesson</a></li>
+                <li><a href="./css-lesson-3.html">Next Lesson</a></li>
             </ul>
             <hr class="rounded" color="black">
         </div>
