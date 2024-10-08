@@ -3,7 +3,7 @@
  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML | Lesson 1</title>
+    <title>Charlie Crutcher | CSS Lesson 1</title>
     <link rel="stylesheet" href="../../styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,10 +21,6 @@
             <li><a href="../../book-reviews/book-reviews-home.html">Book Reviews</a></li>
             <li><a href="../../game-dev/game-dev-home.html">Game Dev</a></li>
         </ul> 
-        <!-- Previous/Next Lesson Navigation Bar -->
-        <ul class="container">
-            <li><a href="html-lesson-2.html">Next Lesson</a></li>
-        </ul> 
     </nav>
     <!-- End of Websites Nav Bar Element -->
 
@@ -34,16 +30,19 @@
 
         <!-- Lesson Content Element -->
         <div class="lesson">
-            <h2>CSS: Lesson 1</h2>
-            <h3>Introduction to CSS</h3>
-            <h3>Date: 7th October 2024</h3>
+            <hr class="rounded" color="black">
+            <h1 style="text-align: center;">Lesson 1 - Introduction to CSS</h1>
+            <h2 style="text-align: center;">Date: 7th - 8th October 2024</h2>
+            <hr class="rounded" color="black"><br>
+            <h3>Introduction</h3>
             <p>
                 Now we have established how to write the HTML that structures our webpages, we can 
                 now start to add some <em>style</em> to our pages, which is what CSS is for.
             </p>
             <br>
 
-            <h4>Basic syntax</h4>
+            <!-- Basic CSS syntax -->
+            <h3>Basic syntax</h3>
             <p>
                 At the most basic level, CSS is made up of various rules. These rules are made up 
                 of a selector and a semicolon-separated list of declarations, with each of those
@@ -52,23 +51,24 @@
             <img href="../../images/css/basic-syntax.jpg">
             <br>
 
-            <h4>Selectors</h4>
+            <!-- Selectors -->
+            <h3>Selectors</h3>
             <p>
                 Selectors refer to the HTML elements to which the CSS rules apply to; they are what
                 are being 'selected' for each CSS rule. Below, we will go through the most common 
                 subsections used in CSS.
             </p>
-            <h5>Universal selector</h5>
+            <h4>Universal selector</h4>
             <p>
                 The universal selector selects elements of any time. It consists of a simple asterisk (*).
             </p>
-            <h5>Type selectors</h5>
+            <h4>Type selectors</h4>
             <p>
                 The type selector (or element selector), selects all elements of the given element 
                 type, with the syntax just being the name of the element. For example: we could use
                 div {color: white;}, which would select all div elements.
             </p>
-            <h5>Class selectors</h5>
+            <h4>Class selectors</h4>
             <p>
                 Class selectors select all elements with the given class, which is just an
                 attribute placed on a HTML element. For example div class="alert" in HTML, would be
@@ -79,7 +79,7 @@
                 value of the class attribute. Classes aren't required to be specific to a particular
                 element, so you can use the same class on as many elements as you would like.
             </p>
-            <h5>ID selectors</h5>
+            <h4>ID selectors</h4>
             <p>
                 ID selectors are similar to class selectors. They select an element with the given 
                 ID, which again is an attribute placed on a HTML element. The difference between 
@@ -91,7 +91,7 @@
                 the ID attribute. You should use IDs <b>sparingly</b>, as in most instances, simply 
                 using classes will suffice.
             </p>
-            <h5>The grouping selector</h5>
+            <h4>The grouping selector</h4>
             <p>
                 What if we had two groups of elements that share some of their style declarations?
             </p>
@@ -100,7 +100,7 @@
                 list. For example:
             </p>
             <img href="../../images/css/group-selectors.jpeg">
-            <h5>Chaining selectors</h5>
+            <h4>Chaining selectors</h4>
             <p>
                 Another way to use selectors is to chain them as a list without any separation.
             </p>
@@ -120,7 +120,7 @@
                 <em>subsection</em> and <em>header</em> classes. This can also be used to chain a 
                 class and an ID, (.subsection#preview) like so.
             </p>
-            <h5>Descendant combinator</h5>
+            <h4>Descendant combinator</h4>
             <p>
                 Combinators allow us to combine multiple selectors differently than either grouping
                 or chaining them, as they show a relationship between the selectors. There are four
@@ -129,7 +129,108 @@
                     descendant combinator will only cause elements that match the last selector to be selected
                     if they also have an ancestor that matches the previous selector.
             </p>
+            <p>
+                Something such as .ancestor .child, would select an element with the class 'child'
+                if it has an ancestor with the class <em>ancestor</em>. Another way to think of it
+                is that <em>child</em> will only be selected if it is nested inside <em>ancestor</em>,
+                regardless of how deep that nesting is.
+            </p>
+            <p>
+                There is no real limit to how many combinators you can add to a rule, so .one .two 
+                .three .four would work. It would just select an element that has a class of four
+                if it has an ancestor with the class of three, if that had its own ancestor with a
+                class of two etc.
+            </p><br>
 
+            <!-- Most common CSS properties -->
+            <h3>Properties to get started with</h3>
+            <p>
+                Some CSS properties are going to be used all of the time. Some of the most commonly
+                used properties used in CSS will be discussed below, but this is by no means a complete
+                list. It will however be enough to help get you started.
+            </p>
+            <h4>Color and background-color</h4>
+            <p>
+                The <b>color</b> property sets an element's <b>text color</b>, while <b>background-color</b>
+                sets the <b>background color</b> of an element. It is just annoying how it isn't
+                spelt correctly!
+            </p>
+            <p>
+                Both of these properties can accept one of several kinds of values. A common value
+                is a keyword, such as a color name like <em>red</em>, or the <em>transparent</em>
+                keyword. They also accept HEX, RGB and HSL values, allowing for further customisation.
+            </p>
+            <h4>Typography basics and text-align</h4>
+            <p>
+                <em>font-family</em> can be a single value or a comma-separated list of values that
+                determine what font an element uses. Each font will fall into one of two categories,
+                a 'font family name', such as <em>"Times New Roman"</em>, or a 'generic family name',
+                like <em>serif</em>.
+            </p>
+            <p>
+                If the user's browser cannot find or doesn't support the first font in a list, it will
+                use the next one, which is why it is best practice to have a generic font family as
+                a fallback, such as "Times New Roman" or serif.
+            </p>
+            <p>
+                <em>font-size</em> sets the size of the font, whilst <em>font-weight</em> affects
+                the boldness of the text. <em>text-align</em> aligns text horizontally within an
+                element. You can use common keywords such as text-align: center, or text-align: left.
+            </p>
+            <h4>Image height and width</h4>
+            <p>
+                While images aren't the only elements that we are able to adjust the height and width
+                of, we are focusing on them specifically in this case.
+            </p>
+            <p>
+                By default, an img elements height and width values will be the same as the actual
+                image file's height and width. To adjust the size of the image without causing it to
+                lose its proportions, you could use a value of "auto" for the height property,
+                and simply adjust the width value accordingly.
+            </p><br>
+            <h3>Adding CSS to HTML</h3>
+            <h4>External CSS</h4>
+            <p>
+                This is the most common method of adding CSS to HTML. It consists of creating a
+                separate file for the CSS and linking it to the HTML page, inside the 'head' element.
+                This is done using the &lt;link&gt; element.
+            </p>
+            <p>
+                The advantages of using external CSS is that:
+            </p>
+            <ol>
+                <li>It keeps our HTML and CSS separate. This keeps the HTML file smaller and cleaner looking.</li>
+                <li>The CSS can be edited in <em>one</em> place.</li>
+            </ol>
+            <h4>Internal CSS</h4>
+            <p>
+                Also known as embedded CSS, this involves adding CSS within the HTML file. With this
+                method, you place all the rules inside a pair of opening and closing &lt;style&gt;
+                tags, which are placed inside of the opening and closing &lt;head&gt; tags in the 
+                HTML file. This method does not require a &lt;link&gt; element.
+            </p>
+            <p>
+                While this method can be useful for adding unique styles to a <em>single page</em>
+                of a website, it doesn't keep things separate, and can cause the HTML file to get
+                pretty big.
+            </p>
+            <h4>Inline CSS</h4>
+            <p>
+                This method allows you to add CSS styles directly into HTML elements, however this
+                method isn't as recommended. This is due to a couple of reasons:
+            </p>
+            <ol>
+                <li>It can quickly become messy, causing bloat to the HTML file.</li>
+                <li>It can cause unnecessary repetition and more bloat.</li>
+                <li>Inline CSS overrides the other two methods, which can cause unexpected results.</li>
+            </ol><br>
+            
+            <hr class="rounded" color="black">
+            <ul class="lesson-nav">
+                <li><a href="./css-lessons.html">Back</a></li>
+                <li><a href="./css-lesson-2.html">Next Lesson</a></li>
+            </ul>
+            <hr class="rounded" color="black">
         </div>
         <!-- End of Lesson Content Element -->
 
