@@ -20,6 +20,14 @@ a:active {
   color: #b8b8b8;
 }
 
+/* Content Link Anchor Tag */
+.content-link {
+  color:rgb(164, 64, 49);
+}
+.content-link:hover {
+  color: rgb(96, 37, 28);
+}
+
 nav {
   background-color: #393838;
   position: relative;
