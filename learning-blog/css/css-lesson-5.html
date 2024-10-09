@@ -40,8 +40,64 @@
             <!-- Introduction Paragraph -->
             <h3>Introduction</h3>
             <p>
-
+                The previous lesson discussed how different display types have unique box models,
+                and we can modify the box calculation by changing the display property. But CSS has
+                two box types: block and inline boxes, which determine element behaviour and
+                interaction. The display property controls how HTML elements appear on the webpage,
+                and we will delve into its various options further in this lesson.
             </p><br>
+
+            <!-- Block elements vs inline elements -->
+             <h3>Block vs inline</h3>
+             <p>
+                Most elements that we have discussed so far have been block elements. By default,
+                element styles are set to display: block. These will appear on the page stacked on
+                top of each other, with each element starting a new line.
+             </p>
+             <p>
+                Inline elements do not start a new line. As their name would suggest, they appear
+                in line with whatever elements are placed beside it. An example of an inline element
+                is a link, or an anchor tag, as when you place one in the middle of a paragraph, the
+                link will behave as if it is part of the paragraph.
+             </p>
+             <p>
+                Padding and margin also behave differently for inline elements. Generally, you do not
+                want to try to put extra padding or margins on inline elements.
+             </p>
+             <h4>The middle ground inline-block</h4>
+             <p>
+                Inline-block elements behave like inline elements, but with block-style padding and margins.
+                display: inline-block is a useful tool we can use, but usually we will instead be
+                using the flexbox more often if we are lining up multiple boxes. Flexbox will be
+                discussed further in the next lesson.
+             </p><br>
+
+             <!-- Divs and spans -->
+              <h3>Divs and spans</h3>
+              <p>
+                All of the HTML elements we have discussed give meaning to their content. For example,
+                paragraph elements tell the browser to display the text it contains as a paragraph.
+                Strong elements tell the browser which texts within are important etc. Divs and spans however,
+                give no particular meaning to their content, as they are just generic boxes that
+                contain anything.
+              </p>
+              <p>
+                Having elements like this available can be useful. Often, we will need elements to
+                serve no other purpose than to be 'hook' elements. We can hive an id or class to
+                target them for styling with CSS. Another use case we will face regularly is grouping
+                related elements under one parent element to position them correctly on the page.
+                Divs and spans provide us with the ability to do this.
+              </p>
+              <p>
+                By default, a div is a block-level element. It is commonly used as a container element
+                to group other elements. They allow us to <em>divide</em> the page into different
+                blocks and apply styling to these blocks.
+              </p>
+              <p>
+                By default, a span is an inline-level element. It can be used to group text
+                and inline HTML elements for styling, and should only be used when no other
+                semantic HTML element is appropriate.
+              </p>
 
             <!-- Lesson navigation bar found at the bottom of the lesson -->
             <hr class="rounded" color="black">
