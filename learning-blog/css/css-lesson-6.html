@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charlie Crutcher | CSS Lesson 6</title>
+    <link rel="stylesheet" href="../../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+
+    <!-- Websites Nav Bar Element -->
+    <nav>  
+        <ul class="nav-container">  
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../../contact/contact-home.html">Contact</a></li>  
+            <li><a href="../learning-blog-home.html">Learn Blog</a></li>  
+            <li><a href="../../book-reviews/book-reviews-home.html">Book Reviews</a></li>
+            <li><a href="../../game-dev/game-dev-home.html">Game Dev</a></li>
+        </ul> 
+    </nav>
+    <!-- End of Websites Nav Bar Element -->
+
+
+    <!-- Main Div for Website's Content -->
+    <div class="content">
+
+        <!-- Lesson Content Element -->
+        <div class="lesson">
+
+            <!-- Heading -->
+            <hr class="rounded" color="black">
+            <h1 style="text-align: center;">Lesson 6 - Introduction to Flexbox</h1>
+            <h2 style="text-align: center;">Date: 13th October 2024</h2>
+            <hr class="rounded" color="black"><br>
+
+            <!-- Introduction Paragraph -->
+            <h3>Introduction</h3>
+            <p>
+                There are many ways to move elements around on a web page, with some being newer
+                than others and others falling out of style. The debut of flexbox however, was
+                revolutionary. It is now considered to be the default way of positioning elements
+                for many developers.
+            </p><br>
+
+            <!-- A warning on flexbox's complexity -->
+            <h3>Before we start</h3>
+            <p>
+                Flexbox layouts can be complicated. The browser's developer tools will be vital
+                in the following lessons, and should be the first step of action every time.
+            </p>
+            <p>
+                Whilst flexbox isn't necessarily more difficult than the other concepts that we've
+                covered, it does have an increased complexity. It may take a while to make use of
+                any of the things we are going to learn in these first lessons.
+            </p>
+            <p>
+                Always come back and reference these lessons if you are struggling, but remember,
+                its not a race.
+            </p><br>
+
+            <!-- Flexbox -->
+            <h3>Flexbox</h3>
+            <p>
+                Flexbox is a way to arrange items into rows or columns. These items will flex based
+                on the rules that you define.
+            </p>
+            <p>
+                For example, if we set our flex-container element to "display: flex", and our
+                flex-container item's element to "flex: 1", all the items inside the flexbox will
+                be horizontally aligned.
+            </p>
+            <h4>Flex containers and flex items</h4>
+            <p>
+                Flexbox isn't just a CSS property, it is a whole toolbox of properties that you can
+                use to put things where you need them. Some of these properties belong on a flex
+                container, while some go on the flex items. This is an important concept0
+            </p>
+            <p>
+                A flex container is any element that has "display: flex" on it. A flex item is
+                any element that lives directly inside of a flex container.
+            </p>
+            <p>
+                To complicate things, any element can be both a flex container <b>and</b> a flex
+                item. Said another way, you can also put "display: flex" on a flex item and then
+                use flexbox to arrange its children. Essentially a flex item, within a flex container,
+                with another flex container as a child of that flex item.
+            </p>
+            <p>
+                Creating and nesting flex containers and items is the primary way we will be building
+                up complex layouts. Flexbox is a very powerful tool that can achieve this for us.
+            </p><br>
+            <h3>Additional resources</h3>
+            <p><a href="https://internetingishard.netlify.app/html-and-css/flexbox/index.html"
+            target="_blank" rel="noopener noreferrer">Interneting Is Hard</a> explains modern css
+            layouts with flexbox. This is a VERY useful resource that discusses a LOT of the basics
+            of flexbox and what tools they provide.</p><br>
+
+            
+            <!-- Lesson navigation bar found at the bottom of the lesson -->
+            <hr class="rounded" color="black">
+            <ul class="lesson-nav">
+                <li><a href="./css-lesson-5.html">Previous Lesson</a></li>
+                <li><a href="./css-lessons.html">Back</a></li>
+                <li><a href="./css-lesson-7.html">Next Lesson</a></li>
+            </ul>
+            <hr class="rounded" color="black">
+        </div>
+        <!-- End of Lesson Content Element -->
+
+    </div>
+    <!-- End of Main Div -->
+
+    <!-- Footer -->
+    <footer>
+        <p style="text-align: center;">Charlie Crutcher</p>
+        <p style="text-align: center;"><a href="mailto:charliemarkcrutcher@gmail.com">charliemarkcrutcher@gmail.com</a></p>
+    </footer>
+    <!-- End of footer -->
+    
+</body>
+<!-- End of body -->
+
+</html>
