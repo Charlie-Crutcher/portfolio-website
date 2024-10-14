@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charlie Crutcher | CSS Lesson 7</title>
+    <link rel="stylesheet" href="../../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+
+    <!-- Websites Nav Bar Element -->
+    <nav>  
+        <ul class="nav-container">  
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../../contact/contact-home.html">Contact</a></li>  
+            <li><a href="../learning-blog-home.html">Learn Blog</a></li>  
+            <li><a href="../../book-reviews/book-reviews-home.html">Book Reviews</a></li>
+            <li><a href="../../game-dev/game-dev-home.html">Game Dev</a></li>
+        </ul> 
+    </nav>
+    <!-- End of Websites Nav Bar Element -->
+
+
+    <!-- Main Div for Website's Content -->
+    <div class="content">
+
+        <!-- Lesson Content Element -->
+        <div class="lesson">
+
+            <!-- Heading -->
+            <hr class="rounded" color="black">
+            <h1 style="text-align: center;">Lesson 7 - Growing and Shrinking</h1>
+            <h2 style="text-align: center;">Date: 14th October 2024</h2>
+            <hr class="rounded" color="black"><br>
+
+            <!-- Introduction Paragraph -->
+            <h3>Introduction</h3>
+            <p>
+                In this lesson we will be looking at what happens when we put "flex: 1" on flex items.
+            </p><br>
+
+            <h3>The flex shorthand</h3>
+            <p>
+                The "flex" declaration is actually a shorthand for 3 properties that you can set
+                on a flex item. These 3 properties affect how flex items size themselves within
+                their container. 
+            </p>
+            <p>
+                So dib {flex: 1;} equates to: flex-grow: 1, flex-shrink: 1, flex-basis: 0.
+                Very often the flex shorthand is defined with only one value, in this case, the
+                value is applied to flex-grow, so when we put flex: 1, we were actually specifying
+                a shorthand of flex: 1 1 0.
+            </p>
+            <h4>Flex-grow</h4>
+            <p>
+                flex-grow expects a single number as its value, with that number being used as the
+                flex-item's "growth factor". When we apply flex: 1 to every div inside a container,
+                we are telling every div to grow the same amount. The result of this is that every div
+                ends up being the same size. Instead, if we add "flex: 2" to just one of these divs,
+                that div would grow to 2x the size of the others! Smart stuff!
+            </p>
+            <h4>Flex-shrink</h4>
+            <p>
+                flex-shrink is similar to flex-grow but instead sets the "shrink factor" of a flex
+                item. flex-shrink only ends up being applied if the size of all flex items is larger
+                than their parent container. The default shrink factor is 1, which means all items
+                will shrink evenly. If you do not want an item to shrink then you can specify flex-shrink: 0;.
+            </p>
+            <h4>Flex-basis</h4>
+            <p>
+                flex-basis sets the initial size of a flex item, so any sort of flex-growing or
+                flex-shrinking starts from that baseline size. The shorthand value defaults to
+                flex-basis: 0%.
+            </p>
+            <h4>flex: auto</h4>
+            <p>
+                We have mentioned flex: auto, but what is this? flex-auto is one of the shorthands
+                of flex. When auto is defined as a flex keyword, it is equivalent to the values of
+                flex-grow: 1, flex-shrink: 1 and flex-basis: auto or to flex: 1 1 auto using the flex
+                shorthand. Note, flex: auto is not the default value when using the flex shorthand
+                despite the name being "auto".
+            </p>
+            <h4>In practice</h4>
+            <p>
+                In practice, it is uncommon that we will use complex values for flex-grow, flex-shrink
+                or flex-basis. Generally, you're most likely to use declarations like flex: 1, to make
+                divs grow evenly, and flex-shrink: 0, to keep divs from shrinking.
+
+            </p>
+            <!-- Lesson navigation bar found at the bottom of the lesson -->
+            <hr class="rounded" color="black">
+            <ul class="lesson-nav">
+                <li><a href="./css-lesson-6.html">Previous Lesson</a></li>
+                <li><a href="./css-lessons.html">Back</a></li>
+                <li><a href="./css-lesson-8.html">Next Lesson</a></li>
+            </ul>
+            <hr class="rounded" color="black">
+        </div>
+        <!-- End of Lesson Content Element -->
+
+    </div>
+    <!-- End of Main Div -->
+
+    <!-- Footer -->
+    <footer>
+        <p style="text-align: center;">Charlie Crutcher</p>
+        <p style="text-align: center;"><a href="mailto:charliemarkcrutcher@gmail.com">charliemarkcrutcher@gmail.com</a></p>
+    </footer>
+    <!-- End of footer -->
+    
+</body>
+<!-- End of body -->
+
+</html>
