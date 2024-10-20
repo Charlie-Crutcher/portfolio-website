@@ -1,19 +1,83 @@
-/* Main body of the website */
-body {
-    margin: 0px;
-    border: 0px;
-    background-color: rgb(146, 170, 152);
-    font-family: "Fredoka", sans-serif;
+/* 1: Body */
+* {
+  box-sizing: border-box; 
 }
+body {
+  display: flex;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  margin: 0;
+  margin: 0px;
+  border: 0px;
+  background-color: rgb(146, 170, 152);
+  font-family: "Fredoka", sans-serif;
+}
+/* END OF BODY */
 
-/* Generic anchor tags */
+
+
+/* 2: Main Div Flexbox */
+#main {
+  display: flex;
+  flex: 1;
+}
+#main > article {
+  flex: 1;
+}
+#main > nav, #main > aside {
+  flex: 0 0 15vw;
+  background: beige;
+}
+#main > nav {
+  order: -1;
+}
+header, footer {
+  margin: 0;
+  flex: 0.1;
+  background: yellowgreen;
+  display: block;
+  text-align: center;
+}
+/* END OF MAIN DIV FLEXBOX */
+
+
+
+/* 3: Navigation Bar Element */
+nav {
+  background-color: #393838;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 0;
+}
+nav > ul {
+  flex: 1;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  padding-left: 0;
+  font-size: 36px;
+}
+nav > ul > li {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+/* END OF NAVIGATION BAR ELEMENT */
+
+
+
+
+
+/* 4. Generic Anchor Tags & Links */
 a {
   color: black;
   text-decoration: none;
 }
 
 a:hover {
-  color:#393838;
+  color:#6d6d6d;
 }
 
 a:active {
@@ -27,63 +91,9 @@ a:active {
 .content-link:hover {
   color: rgb(96, 37, 28);
 }
+/* END OF GENERIC ANCHOR TAGS & LINKS 
 
-nav {
-  background-color: #393838;
-  position: relative;
-  top: 0;
-  margin: 0px;
-  border: 0px;
-  overflow: hidden;
-}
 
-/* List class for nav container, the nav bar found at the top of every page on the site. */
-.nav-container {  
-    display: flex;  
-    position: relative;
-    top: 0;
-    padding-left: 0;
-    overflow: hidden;
-    background-color: #393838;
-  }
-
-  .nav-container > li {  
-    flex: 1;  
-    color: #626F47;
-  }
-
-  .info-container-day-2 {
-    background-color: #626F47;
-    border-radius: 25px;
-  }
-  .content {
-    margin: 5%;
-    border: 5%;
-  }
-
-  ul {
-    list-style: none;
-    text-align: center;
-  }
-
-  ul a:hover {
-    color: lightgray;
-  }
-
-  ul a {
-    color: black;
-    text-decoration: none;
-  }
-
-  footer { 
-    height: auto; 
-    text-align: center;
-    padding: 1%;
-    bottom:0;
-    width:100%; 
-    background-color: #393838; 
-    opacity: 1;
-}
 
 /* Lesson navigation class. Found at the bottom of each lesson in learning blog. */
 .lesson-nav {
